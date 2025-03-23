@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz SinChan</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gradient-to-b from-orange-500 to-orange-300 min-h-screen">
+  <!-- Encabezado con personajes -->
+  <div class="flex flex-wrap justify-center items-center bg-yellow-300 p-4 shadow-md z-10 fixed top-0 left-0 w-full">
+    <!-- Lado izquierdo -->
+    <div class="hidden sm:flex gap-x-4">
+      <img src="HiroshTransparente.png" alt="Hiroshi" class="w-14 h-14" />
+      <img src="Mishae_transparente.png" alt="Misae" class="w-14 h-14" />
+      <img src="HimaTransparente.png" alt="Himawari" class="w-14 h-14" />
+      <img src="NevadoTrasparente.png" alt="Nevado" class="w-14 h-14" />
+      <img src="Sinchan transparente.png" alt="ShinChan" class="w-14 h-14" />
+    </div>
+
+    <!-- Título -->
+    <h1 class="text-3xl sm:text-5xl text-[#ff0000] font-bold text-center flex-1">SinChan Quiz</h1>
+
+    <!-- Lado derecho -->
+    <div class="hidden sm:flex gap-x-4">
+      <img src="Sinchan transparente.png" alt="ShinChan" class="w-14 h-14" />
+      <img src="NevadoTrasparente.png" alt="Nevado" class="w-14 h-14" />
+      <img src="HimaTransparente.png" alt="Himawari" class="w-14 h-14" />
+      <img src="Mishae_transparente.png" alt="Misae" class="w-14 h-14" />
+      <img src="HiroshTransparente.png" alt="Hiroshi" class="w-14 h-14" />
+    </div>
+  </div>
+
+  <!-- Contenido principal -->
+  <div class="flex flex-col lg:flex-row pt-40 w-full px-4">
+    <!-- LADO IZQUIERDO -->
+    <div class="hidden lg:flex w-1/4 justify-center items-start pt-10">
+      <img src="shinchan_naranja.jpg" alt="Shin Chan izquierdo" class="w-40">
+    </div>
+
+    <!-- CONTENIDO CENTRAL -->
+    <div class="w-full lg:w-2/4 flex flex-col items-center gap-6">
+      <div class="w-full sm:w-10/12 py-4 px-4 text-center border-gray-300 rounded-lg shadow-md bg-white">
+        <p>Shin Chan es una serie japonesa de comedia que sigue las travesuras de Shinnosuke Nohara, un niño de cinco años con una personalidad desbordante, incansable y adorable. Junto a su familia y amigos, vive situaciones disparatadas que mezclan humor absurdo con una mirada irónica de la vida cotidiana. ¿Cuánto sabés sobre este personaje inolvidable?</p>
+        <div id="trailerContainer" class="flex justify-center my-4"></div>
+      </div>
+
+      <!-- Tema 1 -->
+      <div id="tema1" class="flex flex-col items-center gap-4">
+        <h2 class="text-xl sm:text-2xl text-red-600 font-bold text-center bg-yellow-300 p-4 shadow-md rounded-md w-full sm:w-10/12">Presentamos al culpable de casi todo</h2>
+        <div class="w-full sm:w-10/12 bg-white p-4 shadow-lg rounded-lg text-center">
+          <p class="text-black">En este tema conocerás los datos esenciales del pequeño terremoto japonés: Shinnosuke Nohara, más conocido como Shin Chan. Tiene solo cinco años, pero parece que vive hace treinta. Vive en Kasukabe, tiene un perro que parece más listo que él (¡y eso no es difícil!), y un don natural para meter a su mamá en problemas... ¡y a su papá en deudas! También hay que destacar que sus mayores debilidades son las mujeres, las galletitas y, por supuesto… ¡Ultrahéroe!</p>
+        </div>
+      </div>
+
+      <!-- Tema 2 -->
+      <div id="tema2" class="flex flex-col items-center gap-4">
+        <h2 class="text-xl sm:text-2xl text-red-600 font-bold text-center bg-yellow-300 p-4 shadow-md rounded-md w-full sm:w-10/12">Os presentamos el zoológico de Kasukabe</h2>
+        <div class="w-full sm:w-10/12 bg-white p-4 shadow-lg rounded-lg text-center">
+          <p class="text-black">Bienvenidos al zoológico más alocado de Japón: no tiene jaulas, pero sí criaturas únicas. Shin Chan es el líder del grupo, experto en bailes ridículos, comentarios inapropiados y en poner a prueba la paciencia de los adultos. Misae, su madre, puede pasar del amor maternal al grito destructor en un segundo. Le encantan las telenovelas, las rebajas y, sobre todo, dar unos buenos capones. Hiroshi, su padre, el honorable trabajador… cuyo mayor talento es llegar tarde. Una de sus virtudes es que puede desmayar a cualquiera con el olor de sus pies. Himawari, la bebé del caos: pequeña, adorable y peligrosa. Probablemente sea la mayor amante de las joyas y de los chicos guapos de toda la ciudad. Nevado es el perro de la familia. Tiene el mayor coeficiente intelectual de la casa y es el único capaz de aguantar a Shin Chan sin perder la cordura. Y por último, pero no menos importante, tenemos al glorioso y caótico Ejército Revolucionario de Kasukabe, formado por Shin Chan, Kazama, Nene, Bo-chan y Masao. Su misión es clara: hacer de cada día una aventura absurda, jugar a papás y mamás como si fuera una telenovela, y llevar al borde del colapso nervioso a todas sus seños de la guarde.
+
+          </p>
+          <img src="personajesShinchan.jpg" alt="personajes" class="mx-auto mt-4 mb-4 rounded-lg shadow-md w-full sm:w-3/4">
+        </div>
+      </div>
+
+      <!-- Tema 3 -->
+      <div id="tema3" class="flex flex-col items-center gap-4">
+        <h2 class="text-xl sm:text-2xl text-red-600 font-bold text-center bg-yellow-300 p-4 shadow-md w-full sm:w-10/12 rounded-md">Un musical sin guion… y sin vergüenza</h2>
+        <div class="w-full sm:w-10/12 bg-white p-4 shadow-lg rounded-lg text-center">
+          <p class="text-black">Prepárate para un espectáculo como ningún otro. En este tema vas a descubrir el lado más artístico de Shin Chan (si es que se le puede llamar así). Entre bailes imposibles, canciones inventadas y puestas en escena que harían llorar a cualquier profesor de música, este niño transforma lo cotidiano en un verdadero festival del absurdo. Desde su legendario “baile del culo” hasta el mítico momento trompa, trompa, trompa trompa..., cada actuación es una mezcla de descontrol y comedia involuntaria. Y como si fuera poco, en uno de sus momentos más emocionalmente desconcertantes, Shin Chan se despacha cantando “Al partir un beso y una flor”, como si fuera Nino Bravo en versión miniatura con pañales. Y no está solo: sus amigos, sus padres, y hasta los vecinos acaban envueltos en este musical sin guion… y sin vergüenza.Prepárate para un espectáculo como ningún otro. En este tema vas a descubrir el lado más artístico de Shin Chan (si es que se le puede llamar así). Entre bailes imposibles, canciones inventadas y puestas en escena que harían llorar a cualquier profesor de música, este niño transforma lo cotidiano en un verdadero festival del absurdo. Desde su legendario “baile del culo” hasta el mítico momento trompa, trompa, trompa trompa..., cada actuación es una mezcla de descontrol y comedia involuntaria. Y como si fuera poco, en uno de sus momentos más emocionalmente desconcertantes, Shin Chan se despacha cantando “Al partir un beso y una flor”, como si fuera Nino Bravo en versión miniatura con pañales. Y no está solo: sus amigos, sus padres, y hasta los vecinos acaban envueltos en este musical sin guion… y sin vergüenza.</p>
+          <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <div id="culitoContainer" class="flex justify-center my-4"></div>
+            <div id="trompaContainer" class="flex justify-center my-4"></div>
+            <div id="alPartirContainer" class="flex justify-center my-4"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Inicio -->
+      <div id="inicio" class="bg-white w-full sm:w-10/12 p-6 sm:p-16 text-center rounded-xl shadow-md">
+        <h1 class="mb-4">"espués de este cursillo exprés por el mundo loco de Shin Chan, si crees que estás preparado para enfrentarte al desafío más absurdo desde que Nené juega a las mamás... ¡pulsa el botón y que empiece lo bueno!"</h1>
+        <button id="btnComenzar" class="bg-orange-400 text-white py-2 px-4 sm:py-[10px] sm:px-[20px] text-xl rounded-md cursor-pointer hover:bg-red-500">
+          ¡Prepárate, Ultrahéroe!
+        </button>
+      </div>
+
+      <!-- Quiz -->
+      <div id="quiz" class="bg-amber-50 w-full sm:w-8/12 p-6 sm:p-16 rounded-xl shadow-md">
+        <h1 class="text-center text-3xl sm:text-4xl font-extrabold text-orange-600 bg-yellow-200 border-4 border-orange-400 px-6 py-4 mt-4 mb-6 rounded-xl shadow-lg">¿Cuánto sabes de SinChan?</h1>
+        <hr>
+        <h2 id="pregunta" class="text-2xl font-semibold text-center mt-6 mb-4 bg-yellow-200 text-red-600 px-6 py-3 rounded-lg shadow-lg border-2 border-yellow-400"">Pregunta</h2>
+        <div id="opciones" class="bg-yellow-300 text-[#fdf3e6] rounded-xl cursor-pointer text-xl block my-[10px] mx-auto text-center py-[10px] px-[20px]"></div>
+        <hr>
+        <footer class="mt-4">
+          <p id="progreso_actual" class="bg-yellow-100  text-yellow-900 p-4 rounded-lg shadow-md w-fit mx-auto text-center mt-6"></p>
+        </footer>
+      </div>
+    </div>
+
+    <!-- LADO DERECHO -->
+    <div class="hidden lg:flex w-1/4 justify-center items-start pt-10">
+      <img src="shinchan_naranja.jpg" alt="Shin Chan derecho" class="w-40 scale-x-[-1]">
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
